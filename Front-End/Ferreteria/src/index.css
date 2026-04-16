@@ -1,0 +1,28 @@
+
+:root{
+/* background-image: url("../public/fondometal.jpg"); */
+ background-attachment: fixed;   /* hace que quede fija */
+  background-position: center;    /* centrada */
+  /* background-repeat: ; */
+  background-size:contain;         /* cubre todo */
+  margin: 0;
+padding: 0;
+background: #fafafa;
+background: linear-gradient(137deg,rgba(250, 250, 250, 1) 23%, rgba(230, 147, 39, 1) 100%);
+
+
+
+
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+@media (max-width: 768px) {
+  .filtro-desktop {
+    display: none;
+  }
+}

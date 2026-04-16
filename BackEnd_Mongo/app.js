@@ -1,0 +1,21 @@
+import express from 'express'
+import cors from 'cors'
+import dotenv from 'dotenv'
+import productosRoutes from './routes/productos.routes.js'
+import { connectDB } from './config/mongo.js'
+import paymentRoutes from "./routes/payment.routes.js"; 
+
+
+
+dotenv.config()
+
+const app = express()
+app.use(cors());
+app.use(express.json())
+
+connectDB()
+
+app.use('/api/productos', productosRoutes)
+app.use( "/api/payment",paymentRoutes)
+
+app.listen(3000, () => console.log('🚀 Server corriendo'))

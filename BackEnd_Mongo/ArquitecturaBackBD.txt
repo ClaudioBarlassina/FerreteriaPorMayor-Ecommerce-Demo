@@ -1,0 +1,22 @@
+backend/
+│
+├── app.js
+├── package.json
+│
+├── config/
+│   └── mongo.js
+│
+├── routes/
+│   └── products.routes.js
+│
+├── models/
+│   └── products.models.js
+│
+├── controllers/
+│   └── products.controller.js
+│
+├── services/
+│   └── products.service.js
+│
+└── utils/
+    └── errors.js
