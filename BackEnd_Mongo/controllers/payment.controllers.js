@@ -2,9 +2,7 @@
 
 import Stripe from 'stripe'
 
-const stripe = new Stripe(
-  process.env.STRIPE_SECRET_KEY
-) // 🔐 usar .env
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY) // 🔐 usar .env
 
 // 🔥 CREAR SESIÓN
 export const createSession = async (req, res) => {
