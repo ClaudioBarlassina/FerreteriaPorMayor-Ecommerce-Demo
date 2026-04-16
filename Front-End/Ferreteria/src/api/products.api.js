@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/api/productos"; // tu backend Mongo o JSON
+const API_URL = "https://ferreteriapormayor-ecommerce-demo.onrender.com/api/productos"; // tu backend Mongo o JSON
 
 // Traer todos los productos, pasando filtros como query params
 export const getProducts = (filters = {}) => {
