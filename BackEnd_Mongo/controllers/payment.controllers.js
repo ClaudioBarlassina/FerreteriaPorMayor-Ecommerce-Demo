@@ -54,8 +54,8 @@ export const createSession = async (req, res) => {
       },
 
       success_url:
-        'http://localhost:5173/success?session_id={CHECKOUT_SESSION_ID}',
-      cancel_url: 'http://localhost:5173/cancel',
+        'https://ferreteriapormayor-ecommerce-demo.onrender.com/success?session_id={CHECKOUT_SESSION_ID}',
+      cancel_url: 'https://ferreteriapormayor-ecommerce-demo.onrender.com/cancel',
     })
 
     res.json({ url: session.url })
