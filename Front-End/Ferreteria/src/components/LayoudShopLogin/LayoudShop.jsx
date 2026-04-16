@@ -21,7 +21,7 @@ export default function LayoutShop({
   filtroMenuLa
 }) {
   const [menuOpen, setMenuOpen] = useState(false)
- {console.log(user.email)}
+// 
   // 🔥 FALTABA EL TOTAL
   const total = prod.reduce((acc, item) => {
     return acc + item.precio * item.cantidad
