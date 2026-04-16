@@ -4,7 +4,7 @@ export default function CheckoutButton({ productos, user }) {
   const handleCheckout = async () => {
     try {
     
-      const response = await fetch("https://full-stack-ecommerce-d1a4.onrender.com/api/payment/create-checkout-session", {
+      const response = await fetch("https://ferreteriapormayor-ecommerce-demo.onrender.com/api/payment/create-checkout-session", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
